@@ -46,11 +46,10 @@ const BirthdayPage = () => {
               <motion.div
                 initial={{
                   scale: 0.8,
-                  rotate: 0,
-                  borderRadius: "50%",
+                  borderRadius: "30%",
                   y: 10,
                 }}
-                whileInView={{ scale: 1, rotate: 0, y: 0, borderRadius: "10%" }}
+                whileInView={{ scale: 1, y: 0, borderRadius: "10%" }}
                 whileHover={{
                   borderRadius: "20%",
                   border: "2px solid #34d399",
