@@ -70,7 +70,7 @@ const BirthdayPage = () => {
         </div>
 
         <div className="text-xl sm:text-2xl md:text-3xl font-semibold">
-          <h1 className="text-3xl font-semibold" style={{ lineHeight: "1.5" }}>
+          <h1 className="text-2xl font-semibold" style={{ lineHeight: "1.5" }}>
             <span style={{ letterSpacing: "5px" }} className="text-white">
               <br></br> HBD
             </span>
