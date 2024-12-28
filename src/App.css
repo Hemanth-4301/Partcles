@@ -1,0 +1,85 @@
+#particles canvas {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -10%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: rise 10s linear infinite, sideway 3s ease-in-out infinite;
+}
+
+.bubble:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+@keyframes sideway {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* Randomize positions and sizes */
+.bubble:nth-child(1) {
+  left: 10%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 12s;
+}
+.bubble:nth-child(2) {
+  left: 20%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 15s;
+}
+.bubble:nth-child(3) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 10s;
+}
+.bubble:nth-child(4) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 8s;
+}
+.bubble:nth-child(5) {
+  left: 90%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 13s;
+}
+
+/* Add more nth-child styles to diversify bubbles */
