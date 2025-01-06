@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Typed from "typed.js";
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
+
 import "../App.css";
 import { motion } from "framer-motion";
 import image1 from "../assets/image1.png";
@@ -76,7 +78,9 @@ const BirthdayPage = () => {
             style={{ letterSpacing: "2px" }}
             className="button "
           >
-            Let's go
+            <div className="flex items-center gap-4 justify-center ">
+              go ahead <ArrowRightIcon className="h-6 w-6" />
+            </div>
           </motion.button>
         </div>
       )}
