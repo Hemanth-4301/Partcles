@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Typed from "typed.js";
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 import "../App.css";
 import { motion } from "framer-motion";
@@ -78,7 +78,7 @@ const BirthdayPage = () => {
             style={{ letterSpacing: "2px" }}
             className="button "
           >
-            <div className="flex items-center gap-4 justify-center ">
+            <div className="flex items-center gap-2 justify-center ">
               go ahead <ArrowRightIcon className="h-6 w-6" />
             </div>
           </motion.button>
